@@ -49,3 +49,8 @@ Sets the color of the terminal at the position of the cursor. Holds its effect u
 
 ### .reset()
 Resets the terminal colors to the default
+
+-----
+
+### .write(text)
+Writes `text` directly to the given stream

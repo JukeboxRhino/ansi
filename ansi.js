@@ -82,6 +82,9 @@ class ANSI {
 	reset() {
 		this.o.write(this.escape + '0m');
 	}
+  write(text) {
+    this.o.write(text);
+  }
 }
 
 module.exports = ANSI;
