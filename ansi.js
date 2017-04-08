@@ -34,27 +34,27 @@ class ANSI {
     return withinBounds;
   }
 	moveTo(x, y) {
-		if(withinBounds(x, y)){
+		if(this.checkBounds(x, y)){
 			this.o.write(this.escape + x + ';' + y + 'H');
 		}
 	}
 	up(y) {
-		if(withinBounds(1, y)){
+		if(this.checkBounds(1, y)){
 			this.o.write(this.escape + y + 'A');
 		}
 	}
 	down(y) {
-		if(withinBounds(1, y)){
+		if(this.checkBounds(1, y)){
 			this.o.write(this.escape + y + 'B');
 		}
 	}
 	forward(x) {
-		if(withinBounds(x, 1)){
+		if(this.checkBounds(x, 1)){
 			this.o.write(this.escape + x + 'C');
 		}
 	}
 	backward(x){
-		if(withinBounds(x, 1)){
+		if(this.checkBounds(x, 1)){
 			this.o.write(this.escape + x + 'D');
 		}
 	}
@@ -68,7 +68,7 @@ class ANSI {
 		this.o.write(this.escape + '2J');
 	}
 	eraseLine() {
-		this.o.write(this.escape + 'K');
+		this.o.write(this.escape + '2K');
 	}
 	color(color, bg) {
 		if(this.colors.hasOwnProperty(color) && this.colors.hasOwnProperty(bg)){
