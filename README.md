@@ -38,14 +38,14 @@ Sets the color of the terminal at the position of the cursor. Holds its effect u
 
 | Colors  |
 |---------|
-| Black   |
-| Red     |
-| Green   |
-| Yellow  |
-| Blue    |
-| Magenta |
-| Cyan    |
-| White   |
+| black   |
+| red     |
+| green   |
+| yellow  |
+| blue    |
+| magenta |
+| cyan    |
+| white   |
 
 ### .reset()
 Resets the terminal colors to the default
