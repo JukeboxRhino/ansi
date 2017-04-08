@@ -37,15 +37,15 @@ Erases the contents of the whole display
 Sets the color of the terminal at the position of the cursor. Holds its effect until the colors are reset. Either argument can be omitted to use only one or the other.
 
 | Colors  |
------------
-| Black   |
-| Red     |
-| Green   |
-| Yellow  |
-| Blue    |
-| Magenta |
-| Cyan    |
-| White   |
+|---------|
+| black   |
+| red     |
+| green   |
+| yellow  |
+| blue    |
+| magenta |
+| cyan    |
+| white   |
 
 ### .reset()
 Resets the terminal colors to the default
